@@ -31,13 +31,15 @@ Have node & git already installed
 
 ## Usage
 
-- **list the fibonnaci sequence up to the nth term by**
+### list the fibonnaci sequence up to the nth term by
 
 ```bash 
  npm run fibs <n>
 ```
-> e.g npm run fibs 8
+> e.g npm run fibs 8 
+
 > result: [0, 1, 1, 2, 3, 5, 8, 13]
+
 
 ## Technology Used
 - language & runtime: JS and node
