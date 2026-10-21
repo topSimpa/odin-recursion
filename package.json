@@ -11,6 +11,6 @@
   "scripts": {
     "test-watcher": "jest --watch *.js",
     "fibs": "./fibsRec.js",
-    "merge": "./mergeSort.js"
+    "sort": "./mergeSort.js"
   }
 }
