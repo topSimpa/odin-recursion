@@ -29,15 +29,22 @@ Have node & git already installed
  npm install
 ```
 
-## Usage
+## How to Use
 
-### list the fibonnaci sequence up to the nth term by
+### listing the fibonnaci sequence up to the nth term
 
 ```bash 
  npm run fibs <n>
 ```
-e.g `npm run fibs 8` leads to  `Result: 0,1,1,2,3,5,8,13`
+e.g `npm run fibs 8` outputs  `Result: 0,1,1,2,3,5,8,13`
 
+### sorting a list of numbers 
+```bash
+npm run merge <space seperated list of number>
+```
+#### Examples 
+- `npm run merge 1 4 2` outputs  `Result: 1,2,3`
+- `npm run merge 1 0 2 5 10 8 1 2` outputs `Results: 0,1,1,2,3,5,8,13`
 
 ## Technology Used
 - language & runtime: JS and node
