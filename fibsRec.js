@@ -4,4 +4,4 @@ import { fibsRec } from "./fibonnaci.js";
 
 const terms = process.argv[2];
 
-console.log(fibsRec(terms));
+console.log(`Result: ${fibsRec(terms)}`);
