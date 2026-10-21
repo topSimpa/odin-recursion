@@ -46,7 +46,7 @@ npm run sort <space seperated list of number>
 ```
 #### Examples 
 - `npm run sort 1 4 2` outputs  `Result: 1,2,4`
-- `npm run sort 1 0 2 5 10 8 1 3` outputs `Results: 0,1,1,2,3,5,8,13`
+- `npm run sort 1 0 2 5 10 8 1 3` outputs `Result: 0,1,1,2,3,5,8,13`
 
 ## Technology Used
 - language & runtime: JS and node
