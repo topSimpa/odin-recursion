@@ -36,7 +36,7 @@ Have node & git already installed
 ```bash 
  npm run fibs <n>
 ```
-e.g `npm run fibs 8` leads to  `Result: [0, 1, 1, 2, 3, 5, 8, 13]`
+e.g `npm run fibs 8` leads to  `Result: 0,1,1,2,3,5,8,13`
 
 
 ## Technology Used
