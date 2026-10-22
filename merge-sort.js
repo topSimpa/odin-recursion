@@ -1,7 +1,6 @@
 export default function mergeSort(arr, result = []) {
   const length = arr.length;
-  if (length === 0) return result;
-  if (length === 1) return arr;
+  if (length <= 1) return arr;
 
   const divider = Math.floor(length / 2);
 
@@ -18,6 +17,7 @@ export default function mergeSort(arr, result = []) {
     const topLeft = sortedLeft[0];
     const topRight = sortedRight[0];
 
+    //sorting the result while merging
     if (topLeft < topRight) {
       result.push(topLeft);
       sortedLeft.splice(0, 1);

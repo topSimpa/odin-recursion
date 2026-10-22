@@ -10,6 +10,7 @@
   },
   "scripts": {
     "test-watcher": "jest --watch *.js",
+    "test": "jest",
     "fibs": "./fibsRec.js",
     "sort": "./mergeSort.js"
   }
