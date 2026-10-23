@@ -2,36 +2,27 @@ export default function mergeSort(arr, result = []) {
   const length = arr.length;
   if (length <= 1) return arr;
 
-  const divider = Math.floor(length / 2);
+  const mid = Math.floor(length / 2);
 
   //dividing into equal halves or at least 1 diff
-  const left = arr.slice(0, divider);
-  const right = arr.slice(divider, length);
+  const left = arr.slice(0, mid);
+  const right = arr.slice(mid, length);
 
   //sorting each halve
   const sortedLeft = mergeSort(left);
   const sortedRight = mergeSort(right);
 
-  //merging when both halfs are both not empty
-  while (notEmpty(sortedLeft) && notEmpty(sortedRight)) {
-    const topLeft = sortedLeft[0];
-    const topRight = sortedRight[0];
-
+  //merging
+  let [l, r] = [0, 0];
+  while (l < sortedLeft.length && r < sortedRight.length) {
     //sorting the result while merging
-    if (topLeft < topRight) {
-      result.push(topLeft);
-      sortedLeft.splice(0, 1);
+    if (sortedLeft[l] < sortedRight[r]) {
+      result.push(sortedLeft[l++]);
     } else {
-      result.push(topRight);
-      sortedRight.splice(0, 1);
+      result.push(sortedRight[r++]);
     }
   }
 
-  //merge the rest of the non empty half into result
-  if (notEmpty(sortedLeft)) result.push(...sortedLeft);
-  else result.push(...sortedRight);
-
-  return result;
+  //return the result merge to the array with
+  return result.concat(sortedLeft.slice(l), sortedRight.slice(r));
 }
-
-const notEmpty = (arr) => !(arr.length === 0);
